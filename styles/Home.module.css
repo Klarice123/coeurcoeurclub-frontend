@@ -23,16 +23,16 @@
 
 .coeur {
   z-index: 1; 
-  animation: blink 1s infinite;
+  animation: pulse 2s infinite;
   /* transform: translate(-50%, -50%) */
 }
 
-@keyframes blink {
+@keyframes pulse {
   0%, 100% {
-    opacity: 1;
+    transform: translate(-50%, -50%) rotate(10deg) scale(1);
   }
   50% {
-    opacity: 0;
+    transform: translate(-50%, -50%) rotate(-10deg) scale(1.1); /* Ajustez l'échelle pour obtenir l'effet de pulsation */
   }
 }
 
