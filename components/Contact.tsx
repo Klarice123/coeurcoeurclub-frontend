@@ -9,7 +9,7 @@ export default function Contact() {
 
     const handleSubmit = (event: FormEvent) => {
         //event.preventDefault(); --> Empêcher la recharge de la page ?
-        // Envoyer par mail via le back
+        // Envoyer par mail via le back avec un outil de mailing
         // Afficher un feedback
     };
 
