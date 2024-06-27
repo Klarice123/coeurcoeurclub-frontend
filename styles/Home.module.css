@@ -24,7 +24,6 @@
 .coeur {
   z-index: 1; 
   animation: pulse 2s infinite;
-  /* transform: translate(-50%, -50%) */
 }
 
 @keyframes pulse {
@@ -32,13 +31,12 @@
     transform: translate(-50%, -50%) rotate(10deg) scale(1);
   }
   50% {
-    transform: translate(-50%, -50%) rotate(-10deg) scale(1.1); /* Ajustez l'échelle pour obtenir l'effet de pulsation */
+    transform: translate(-50%, -50%) rotate(-10deg) scale(1.1);
   }
 }
 
 .lettrage {
   z-index: 2;
-
 }
 
 /* Enable hover only on non-touch devices */
