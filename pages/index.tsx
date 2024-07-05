@@ -1,7 +1,6 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
-import styles from "../styles/Home.module.css"
-import Contact from "../components/Contact";
+import styles from "../styles/Home.module.css";
 import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -17,18 +16,14 @@ export default function Home() {
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
         <section className="image-container">
-          <Image 
-            src={"/images/coeur-rouge-vide.png"} 
+          <img
+            src={"/images/coeur-rouge-vide.png"}
             alt={"coeur à 3 bosses"}
-            width={450}
-            height={400}
             className={`${styles.image} ${styles.coeur}`}
           />
-          <Image 
-            src={"/images/lettrage-noir.png"} 
+          <img
+            src={"/images/lettrage-noir.png"}
             alt={"coeurcoeurclub"}
-            width={400}
-            height={300}
             className={`${styles.image} ${styles.lettrage}`}
           />
         </section>
