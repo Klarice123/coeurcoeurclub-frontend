@@ -9,6 +9,8 @@ const ContactForm: React.FC = () => {
     message: ''
   });
 
+  const [status, setStatus] = useState('');
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData({
@@ -17,10 +19,32 @@ const ContactForm: React.FC = () => {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission logic here
-    console.log('Form submitted:', formData);
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setStatus('Message sent successfully!');
+        // Afficher pop in pour dire message envoyé
+        setFormData({
+          firstName: '',
+          lastName: '',
+          email: '',
+          message: ''
+        });
+      } else {
+        setStatus('Error sending message.');
+      }
+    } catch (error) {
+      setStatus('Error sending message.');
+    }
   };
 
   return (
@@ -68,6 +92,7 @@ const ContactForm: React.FC = () => {
         />
       </div>
       <button className={styles.button} type="submit">Envoyer</button>
+      {status && <p>{status}</p>}
     </form>
   );
 };
