@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from './ContactForm.module.css';
+import styles from '../styles/ContactForm.module.css';
 
 const ContactForm: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -31,8 +31,7 @@ const ContactForm: React.FC = () => {
       });
 
       if (response.ok) {
-        setStatus('Message sent successfully!');
-        // Afficher pop in pour dire message envoyé
+        setStatus('Message envoyé!');
         setFormData({
           firstName: '',
           lastName: '',
@@ -49,49 +48,57 @@ const ContactForm: React.FC = () => {
 
   return (
     <form className={styles.contactForm} onSubmit={handleSubmit}>
-      <h1>Contacte nous</h1>
+      <p className={styles.picto}>✦</p>
+      <h1 className={styles.titre}>CONTACTE NOUS</h1>
       <div className={styles.formGroup_nom}>
-        <div className={styles.formGroup}>
-          <label htmlFor="firstName">Prénom</label>
+        <div className={`${styles.formGroup} ${styles.prenom}`}>
+          <label htmlFor="firstName">PRÉNOM *</label>
           <input
             type="text"
             id="firstName"
             name="firstName"
             value={formData.firstName}
             onChange={handleChange}
+            placeholder="Ton prénom"
+            required
           />
         </div>
         <div className={styles.formGroup}>
-          <label htmlFor="lastName">Nom</label>
+          <label htmlFor="lastName">NOM</label>
           <input
             type="text"
             id="lastName"
             name="lastName"
             value={formData.lastName}
             onChange={handleChange}
+            placeholder="Ton nom"
           />
         </div>
       </div>
       <div className={styles.formGroup}>
-        <label htmlFor="email">Email</label>
+        <label htmlFor="email">EMAIL *</label>
         <input
           type="email"
           id="email"
           name="email"
           value={formData.email}
           onChange={handleChange}
+          placeholder="exemple@email.fr"
+          required
         />
       </div>
       <div className={styles.formGroup}>
-        <label htmlFor="message">Message</label>
+        <label htmlFor="message">MESSAGE *</label>
         <textarea
           id="message"
           name="message"
           value={formData.message}
           onChange={handleChange}
+          placeholder="Ecris ton message ici..."
+          required
         />
       </div>
-      <button className={styles.button} type="submit">Envoyer</button>
+      <button className={styles.button} type="submit">ENVOYER</button>
       {status && <p>{status}</p>}
     </form>
   );

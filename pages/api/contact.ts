@@ -31,10 +31,10 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
 
     try {
       await transporter.sendMail(mailOptions);
-      res.status(200).json({ message: 'Message sent successfully' });
+      res.status(200).json({ message: 'Message envoyé !' });
     } catch (error) {
       console.error(error);
-      res.status(500).json({ message: 'Error sending message' });
+      res.status(500).json({ message: 'Une erreur est survenue en envoyant le message' });
     }
 
   } else {

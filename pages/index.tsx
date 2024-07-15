@@ -30,13 +30,33 @@ export default function Home() {
           </section>
         </section>
         <section className={`${styles.below_the_fold}`}>
-          <div className={`${styles.bloc_adresse}`}>
-              <p>RÉSIDENCE D'ARTISTES</p>
-              <p>Tattoo - Coiffure - Textile - Illustration</p>
-            <div className={`${styles.adresse}`}>
-              <p>COEUR COEUR CLUB</p>
-              <p>12 rue Maubec, 64100 Bayonne</p>
-            </div>
+          <div className={`${styles.bloc_gauche}`}>
+              <div className={`${styles.titre_container}`}>
+                  <h1 className={`${styles.h1}`}>
+                    RÉSIDENCE D'ARTISTES
+                  </h1>
+                  <p className={`${styles.font_m}`}>
+                    Tattoo - Coiffure - Textile - Illustration
+                  </p>
+              </div>
+              <div className={`${styles.coordonnees}`}>
+                <p className={`${styles.font_m}`}>
+                  COEUR COEUR CLUB
+                </p>
+                <p className={`${styles.font_r}`}>
+                  12 rue Maubec, 64100 Bayonne
+                </p>
+                <div className={`${styles.instagram_container}`}>
+                  <img
+                    src={"/images/instagram.png"}
+                    alt={"logo instagram"}
+                    className={`${styles.image_instagram}`}
+                  />
+                  <a href="https://www.instagram.com/coeurcoeur.club/" target="_blank">
+                    <p className={`${styles.intagram_link}`}>@coeurcoeur.club</p>
+                  </a>
+                </div>
+              </div>
           </div>
           <div className={`${styles.bloc_contact}`}>
           <ContactForm/>
