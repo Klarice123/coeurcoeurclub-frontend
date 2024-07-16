@@ -47,7 +47,7 @@
 .formGroup textarea {
   width: 100%;
   padding: 15px;
-  font-size: 24px;
+  font-size: 14px;
   background-color: #1306F805;
   border: none;
   border-bottom: solid 5px black;
@@ -142,7 +142,7 @@
   .formGroup textarea {
     width: 100%;
     padding: 15px;
-    font-size: 24px;
+    font-size: 14px;
     background-color: #1306F805;
     border: none;
     border-bottom: solid 5px black;

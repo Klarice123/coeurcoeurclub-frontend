@@ -33,7 +33,7 @@ export default function Home() {
           <div className={`${styles.bloc_gauche}`}>
               <div className={`${styles.titre_container}`}>
                   <h1 className={`${styles.h1}`}>
-                    RÉSIDENCE D'ARTISTES
+                    RÉSIDENCE D&apos;ARTISTES
                   </h1>
                   <p className={`${styles.font_m}`}>
                     Tattoo - Coiffure - Textile - Illustration
