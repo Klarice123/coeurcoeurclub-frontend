@@ -99,6 +99,7 @@
   font-style: normal;
   font-weight: 900;
   margin-bottom: 24px;
+  color: black;
 }
 
 .font_m {
@@ -107,6 +108,7 @@
   font-style: normal;
   font-weight: 700;
   margin-bottom: 16px;
+  color: black;
 }
 
 .titre_container {
@@ -120,12 +122,14 @@
   font-style: normal;
   font-weight: 500;
   margin-bottom: 24px;
+  color: black;
 }
 
 .instagram_link {
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
+  color: black;
 }
 
 /* Enable hover only on non-touch devices */
@@ -236,6 +240,7 @@
     font-style: normal;
     font-weight: 900;
     margin-bottom: 24px;
+    color: black;
   }
   
   .font_m {
@@ -244,6 +249,7 @@
     font-style: normal;
     font-weight: 700;
     margin-bottom: 16px;
+    color: black;
   }
   
   .titre_container {
@@ -258,12 +264,14 @@
     font-style: normal;
     font-weight: 500;
     margin-bottom: 24px;
+    color: black;
   }
   
   .instagram_link {
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
+    color: black;
   }
 }
 

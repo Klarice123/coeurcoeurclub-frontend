@@ -6,7 +6,7 @@
   width: 100%;
   margin: 0;
   background-color: white;
-  box-shadow: 24px 24px 2px 1px #1306F8;
+  box-shadow: 24px 24px 0px 1px #1306F8;
   border: 5px black solid;
 }
 
@@ -18,6 +18,7 @@
 .contactForm h1 {
   margin-bottom: 48px;
   font-size: 36px;
+  color: black;
 }
 
 .formGroup {
@@ -41,6 +42,7 @@
   margin-bottom: 8px;
   font-size: 12px;
   font-family: Helvetica, Arial, sans-serif;
+  color: black;
 }
 
 .formGroup input,
@@ -52,6 +54,7 @@
   border: none;
   border-bottom: solid 5px black;
   font-family: Helvetica, Arial, sans-serif;
+  border-radius: 0;
 }
 
 .formGroup input::placeholder, .formGroup textarea::placeholder {
@@ -71,7 +74,7 @@
 
 .button {
   font-family: Helvetica, Arial, sans-serif;
-  font-weight: 500;
+  font-weight: 700;
   padding: 18px;
   font-size: 20px;
   color: #fff;
@@ -90,6 +93,10 @@
   text-align: center;
 }
 
+.status {
+  margin-top: 16px;
+}
+
 /* Mobile */
 @media (max-width: 700px) {
 
@@ -101,7 +108,7 @@
     width: 100%;
     margin: 0;
     background-color: white;
-    box-shadow: 24px 24px 2px 1px #1306F8;
+    box-shadow: 12px 12px 0px 1px #1306F8;
     border: 5px black solid;
   }
   
@@ -113,6 +120,7 @@
   .contactForm h1 {
     margin-bottom: 48px;
     font-size: 36px;
+    color: black;
   }
   
   .formGroup {
@@ -136,6 +144,7 @@
     margin-bottom: 8px;
     font-size: 18px;
     font-family: Helvetica, Arial, sans-serif;
+    color: black;
   }
   
   .formGroup input,
@@ -147,6 +156,7 @@
     border: none;
     border-bottom: solid 5px black;
     font-family: Helvetica, Arial, sans-serif;
+    border-radius: 0;
   }
   
   .formGroup input::placeholder, .formGroup textarea::placeholder {
@@ -166,7 +176,7 @@
   
   .button {
     font-family: Helvetica, Arial, sans-serif;
-    font-weight: 500;
+    font-weight: 700;
     padding: 18px;
     font-size: 20px;
     color: #fff;
@@ -181,5 +191,9 @@
 
   .titre {
     text-align: center;
+  }
+
+  .status {
+    margin-top: 8px;
   }
 }

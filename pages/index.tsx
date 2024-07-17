@@ -46,16 +46,14 @@ export default function Home() {
                 <p className={`${styles.font_r}`}>
                   12 rue Maubec, 64100 Bayonne
                 </p>
-                <div className={`${styles.instagram_container}`}>
-                  <img
-                    src={"/images/instagram.png"}
-                    alt={"logo instagram"}
-                    className={`${styles.image_instagram}`}
-                  />
-                  <a href="https://www.instagram.com/coeurcoeur.club/" target="_blank">
+                  <a href="https://www.instagram.com/coeurcoeur.club/" target="_blank" className={`${styles.instagram_container}`}>
+                    <img
+                      src={"/images/instagram.png"}
+                      alt={"logo instagram"}
+                      className={`${styles.image_instagram}`}
+                    />
                     <p className={`${styles.intagram_link}`}>@coeurcoeur.club</p>
                   </a>
-                </div>
               </div>
           </div>
           <div className={`${styles.bloc_contact}`}>

@@ -31,7 +31,7 @@ const ContactForm: React.FC = () => {
       });
 
       if (response.ok) {
-        setStatus('Message envoyé!');
+        setStatus('Message envoyé !');
         setFormData({
           firstName: '',
           lastName: '',
@@ -39,10 +39,10 @@ const ContactForm: React.FC = () => {
           message: ''
         });
       } else {
-        setStatus('Error sending message.');
+        setStatus('Une erreur est survenue');
       }
     } catch (error) {
-      setStatus('Error sending message.');
+      setStatus('Une erreur est survenue');
     }
   };
 
@@ -99,7 +99,7 @@ const ContactForm: React.FC = () => {
         />
       </div>
       <button className={styles.button} type="submit">ENVOYER</button>
-      {status && <p>{status}</p>}
+      {status && <p className={styles.status}>{status}</p>}
     </form>
   );
 };
