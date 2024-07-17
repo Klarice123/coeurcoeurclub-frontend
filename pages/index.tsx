@@ -52,7 +52,7 @@ export default function Home() {
                       alt={"logo instagram"}
                       className={`${styles.image_instagram}`}
                     />
-                    <p className={`${styles.intagram_link}`}>@coeurcoeur.club</p>
+                    <p className={`${styles.instagram_link}`}>@coeurcoeur.club</p>
                   </a>
               </div>
           </div>

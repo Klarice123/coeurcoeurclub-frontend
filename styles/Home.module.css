@@ -126,9 +126,9 @@
 }
 
 .instagram_link {
-  font-size: 24px;
+  font-size: 20px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   color: black;
 }
 
@@ -268,9 +268,9 @@
   }
   
   .instagram_link {
-    font-size: 24px;
+    font-size: 18px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     color: black;
   }
 }
