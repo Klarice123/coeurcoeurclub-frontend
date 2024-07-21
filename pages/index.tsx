@@ -16,7 +16,6 @@ export default function Home() {
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
         <section className={`${styles.above_the_fold}`}>
-          <section className="image-container">
             <img
               src={"/images/coeur-rouge-vide.png"}
               alt={"coeur à 3 bosses"}
@@ -27,7 +26,6 @@ export default function Home() {
               alt={"coeurcoeurclub"}
               className={`${styles.image} ${styles.lettrage}`}
             />
-          </section>
         </section>
         <section className={`${styles.below_the_fold}`}>
           <div className={`${styles.bloc_gauche}`}>
